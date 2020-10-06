@@ -1,2 +1,0 @@
-# PackageDeliveryApplication
-# ChatBotAI

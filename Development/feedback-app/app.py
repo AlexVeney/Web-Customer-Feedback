@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from send_mail import send_mail
+
 
 # Initialize app
 app = Flask(__name__)
@@ -76,7 +78,11 @@ def submit():
             data = Feedback(customer, dealer, rating, comments)
             db.session.add(data)
             db.session.commit()
-        
+
+            # Connect and send email
+            send_mail(customer,dealer, rating, comments)
+
+            # Render success.html page
             return render_template('success.html')
         
         # If customer is duplicated, index rendered and message output to user

@@ -10,6 +10,7 @@ app = Flask(__name__)
 ENV = 'prod'
 
 # Development
+if ENV == 'env':
     # When in development debug is turned on
     app.debug = True
     # When in development postgresql database is used

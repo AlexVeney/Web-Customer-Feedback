@@ -15,4 +15,10 @@ Application ensures that customer name and dealer name are not empty
 - Local PostgreSQL development db
 - Heroku PostgreSQL addon production db
 
+<img src="images/app-screenshot.png" width="450" height="325"/>
+<img src="images/submission.png" width="450" height="325"/>
+<img src="images/mail-notification.png" width="650" height="325" />
+<img src="images/production-db.png" width="650" />
+
+
 Updated: 10/2020

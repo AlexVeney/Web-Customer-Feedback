@@ -57,7 +57,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# Sensitive files
-app.py
-send_mail.py

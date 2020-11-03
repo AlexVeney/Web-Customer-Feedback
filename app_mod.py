@@ -14,11 +14,11 @@ if ENV == 'env':
     # When in development debug is turned on
     app.debug = True
     # When in development postgresql database is used
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PW@localhost/lexus'
+    
 else:
     # Production
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://DBURL'
+    
 
 # added to stop warning message
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
